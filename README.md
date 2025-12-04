@@ -1,112 +1,124 @@
-**Dataset Overview**
+# Supermarket Sales Analysis
 
-The dataset contains 1000 transaction entries from a supermarket with these key attributes:
+A comprehensive exploratory data analysis (EDA) of 1,000 supermarket transactions, uncovering customer behavior, payment trends, revenue drivers, and branch-level performance.
 
-Features include:
+---
 
-Invoice ID
-Branch (A, B, C)
-City (Yangon, Mandalay, Naypyitaw)
-Customer Type (Member / Normal)
-Gender
-Product Line
-Unit Price
-Quantity
-Tax (5%)
-Total
-Date & Time
-Payment Method (Cash, Ewallet, Credit Card)
-COGS
-Gross Income
-Rating
+## Dataset Overview
 
-**Data Preparation**
+The dataset includes 1,000 transaction entries with the following attributes:
 
-In the notebook, I performed:
+- Invoice ID  
+- Branch (A, B, C)  
+- City (Yangon, Mandalay, Naypyitaw)  
+- Customer Type (Member / Normal)  
+- Gender  
+- Product Line  
+- Unit Price  
+- Quantity  
+- Tax (5%)  
+- Total  
+- Date & Time  
+- Payment Method (Cash, Ewallet, Credit Card)  
+- COGS  
+- Gross Income  
+- Rating  
 
-Loaded the CSV using pandas
-Checked data shape → 1000 rows × 17 columns
-No missing values
-Converted Date to datetime
-Generated statistical descriptions (describe())
+---
 
-**Analysis & Visualizations**
+## Data Preparation
 
-The notebook includes multiple visualizations and statistical summaries:
+- Loaded CSV using pandas  
+- Verified shape: **1000 × 17**  
+- Confirmed **no missing values**  
+- Converted Date column to datetime  
+- Produced descriptive statistics using `.describe()`  
 
-1.Gender Distribution
+---
 
-Count of Male vs Female customers
-sns.countplot(x=df['Gender'])
+## Analysis & Visualizations
 
-2.Customer Ratings Distribution
+### 1. Gender Distribution
+Countplot comparing Male vs Female customers.
 
-Rating histogram using seaborn
+### 2. Customer Ratings Distribution
+Histogram showing rating distribution.
 
-3.Transactions per Branch
+### 3. Transactions per Branch
+Transaction counts for branches A, B, and C.
 
-Branches A, B, C transaction counts
+### 4. Popular Payment Methods
+- Ewallet: 345  
+- Cash: 344  
+- Credit Card: 311  
 
-df["Branch"].value_counts()
+Includes a stacked bar chart by branch.
 
-4.Popular Payment Methods
+### 5. Customer Ratings by Branch
+Boxplot comparing customer satisfaction across branches.
 
-Ewallet → 345
-Cash → 344
-Credit Card → 311
-Stacked bar chart by branch included.
+### 6. Gross Income Analysis
+- Gross income by branch  
+- Gross income by gender  
+- Daily gross income trend  
+- **Branch C** showed the highest total gross income  
 
-5.Customer Ratings by Branch
+---
 
-Boxplot to compare satisfaction levels.
+## Key Insights
 
-6.Gross Income Analysis
+- Customers are evenly split: **501 Female, 499 Male**  
+- Branch C generated the highest gross income  
+- Ewallet was slightly more preferred than Cash and Credit Card  
+- Ratings were consistently positive across branches  
+- Fashion Accessories, Electronics, and Health & Beauty were top revenue-generating product lines  
+- Female customers contributed slightly higher average gross income  
 
-Gross income by branch
-Gross income by gender
-Daily gross income trend over time
-Branch C produced the highest gross income.
+---
 
-**Key Insights**
+## Technologies Used
 
-Gender distribution is equal → 501 Female, 499 Male.
-Branch C generated the highest total gross income.
-Ewallet was slightly more preferred than Cash and Credit Card.
-Ratings are generally positive, consistent across branches.
-Product lines like Fashion accessories, Electronics, Health & Beauty contribute heavily to revenue.
-Female customers have slightly higher average gross income contribution.
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook  
 
-**Language & Library Used**
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Jupyter Notebook
+---
 
-**How to Run**
+## How to Run
 
-Clone the repository:
+### Clone the repository:
+``bash
 git clone https://github.com/yourusername/SuperMarketAnalysis.git
-
-Install required packages:
+### Install dependencies:
+bash
+Copy code
 pip install pandas numpy matplotlib seaborn
-
-
-**Open the notebook:**
+### Open the notebook:
+bash
+Copy code
 jupyter notebook SuperMarket.ipynb
 
-**Future Improvements**
+---
+
+### Future Improvements
 Add predictive modeling (sales forecasting)
-Customer segmentation using clustering
-Build a dashboard using PowerBI/Streamlit/Plotly
+
+Customer segmentation via clustering
+
+Build a dashboard using PowerBI, Streamlit, or Plotly
+
 Product-line based revenue forecasting
 
-**Contributing**
+---
 
-Pull requests are welcome!
-Feel free to add more analysis, visualizations, or improvements.
+## Contributing
+Pull requests are welcome.
+Feel free to submit improvements, visualizations, or new analyses.
 
-**If You Found This Useful**
+---
 
-Give this repository a star to support more data analysis projects like this!
+## Support
+If you found this project useful, consider giving the repository a star.
