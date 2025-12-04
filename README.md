@@ -22,13 +22,13 @@ Rating
 
 **Data Preparation**
 
-In the notebook, you performed:
+In the notebook, I performed:
 
-✔ Loaded the CSV using pandas
-✔ Checked data shape → 1000 rows × 17 columns
-✔ No missing values
-✔ Converted Date to datetime
-✔ Generated statistical descriptions (describe())
+Loaded the CSV using pandas
+Checked data shape → 1000 rows × 17 columns
+No missing values
+Converted Date to datetime
+Generated statistical descriptions (describe())
 
 **Analysis & Visualizations**
 
