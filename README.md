@@ -90,8 +90,8 @@ Boxplot comparing customer satisfaction across branches.
 ## How to Run
 
 ### Clone the repository:
-``bash
-git clone https://github.com/yourusername/SuperMarketAnalysis.git
+bash
+```git clone https://github.com/yourusername/SuperMarketAnalysis.git```
 ### Install dependencies:
 bash
 Copy code
